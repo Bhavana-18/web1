@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FORMS</title>
+  </head>
+  <body>
+    <style>
+      body{
+      background-image:url('ml.jpeg');
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-size:100% 100%;
+  }
+  table {
+  border: 3px solid white;
+}
+th, td {
+  padding: 15px;
+}
+  .cities{
+    color:white;
+    background-color: #053f69;
+    text-align: center;
+    margin: auto;
+  }
+    </style>
+<div class="cities">
+  <h1>Registration form</h1>
+      <form autocomplete="on">
+
+        <table align="center">
+          <tr>
+            <td><label for="fname" style="float:left-allign;">FirstName:</label></td>
+            <td>  <input type="text" id="fname" name="fname" placeholder="Bhavana" required><<br><br></td>
+          </tr>
+          <tr>
+            <td><label for="lastname" style="float:left-allign;">LastName</label></td>
+            <td><input type="text" id="lastname" name="lastname" placeholder="Chukkala"><br><br></td>
+          </tr>
+          <tr>
+            <td><label for="bday" style="float:left-allign;">DOB:</label></td>
+            <td><input type="date" name="bday" placeholder="dd-mm-yy"></td>
+          </tr>
+          <tr>
+            <td><label for="email" style="float:right-allign;">Email:</label></td>
+            <td><input type="email" name="Email" placeholder="xyz@gmail.com"></td>
+          </tr>
+          <tr>
+            <td><label for="pwd">Password</label></td>
+            <td><input type="password"id =" pwd" name="password" value=""><br></td>
+          </tr>
+          <tr>
+            <td>  <label for="gender" >Gender:</label></td>
+            <td><input type="radio"  id="gender" name="gender" value="">
+            <label for="male">Male</label><br>
+            <input type="radio"  id="gender" name="gender" value="" >
+            <label for="female">Female</label><br>
+            <input type="radio"  id="gender" name="gender" value="">
+            <label for="others">Others</label><br></td>
+          </tr>
+          <tr>
+            <td><label for="vehicle1">Do you have backlogs?</label><br></td>
+            <td><input type="checkbox" id="vehicle1" name="vehicle1" value="bike"></td>
+          </tr>
+        <tr>
+          <td> <label for="yearofstudy">YearofStudy:</label> </td>
+          <td> <select  id="yearofstudy" class="" name="yearofstudy" size="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+
+          </select> </td>
+        </tr>
+
+        <tr>
+          <td> <label for="branch">Branch:</label> </td>
+          <td><input list="branch"><datalist id="branch">
+            <option value="ECE"></option>
+            <option value="CSE"></option>
+            <option value="EEE"></option>
+          <option value="mech"></option>
+          </datalist></td>
+        </tr>
+        <tr>
+          <td> <label for="subjects">Select ur courses:</label> </td>
+          <td><select class="" name="subjects" id="subjects" multiple>
+            <option value="Web Tech">Web Tech</option>
+          <option value="Data Networks">Data Networks</option>
+          <option value="DSP">DSP</option>
+          <option value="ITC">Information Theory and Coding</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td> <label for="message">Feedback:</label> </td>
+          <td><textarea name="message" rows="10" cols="30" style="width:225px; height:200px;">
+</textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="" value="submit"><br><input type="button" onclick="alert('NITW says you are registered')" value="Click me"></td>
+          <td><input type="reset" name="" value="Reset"></td>
+        </tr>
+        </table>
+
+
+
+
+
+
+</form></div>  </body>
+</html>

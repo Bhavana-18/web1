@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Responsive website</title>
+  <style media="screen">
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #2b1d63;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.footer {
+  padding: 20px;
+  font-style:italic;
+  text-align: right;
+  background: #ddd;
+  margin-top: 20px;
+
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  </style>
+ </head>
+  <body>
+    <div class="header">
+      <h1>Responsive website</h1>
+      <p>It changes with screen size.</p>
+    </div>
+    <div class="topnav">
+  <a href="#">Link</a>
+  <a href="https://bhavana-18.github.io/web1/cite/index.html">Register</a>
+  <a href="#">Link</a>
+  <a href="https://www.w3schools.com/css/css_website_layout.asp" style="float:right">References</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzwVAiNk-SwbcMM9sbq_DOX7MmulO0IwGhQ&usqp=CAU" alt="Sundar Pichai">
+    <h1>Sundar Pichai</h1>
+    <p>Sundar Pichai joined Google in 2004 and became CEO in August of 2015. Prior to that, he led the product management and innovation efforts for a suite of Google's consumer products, including Google Toolbar, Chrome and Chrome OS. He was also responsible for the HTML5 and open web platform efforts at Google.
+<br>
+Before joining Google, he heldvarious engineering and product management positions at Applied Materials, and was a management consultant with McKinsey & Company for a variety of software and semiconductor clients.
+Sundar brings more than 15 years of experience developing high-tech consumer and enterprise products and is a Board Member at Jive Software.</p>
+  </div>
+  <div class="rightcolumn">
+    <img src="data:image/jpeg;base64,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" alt="Satya Nadela">
+    <h1>Satya Nadela</h1>
+    <p>Satya Nadella is Chief Executive Officer of Microsoft. Before being named CEO in February 2014, Nadella held leadership roles in both enterprise and consumer businesses across the company.
+
+Joining Microsoft in 1992, he quickly became known as a leader who could span a breadth of technologies and businesses to transform some of Microsoft’s biggest product offerings.
+
+Most recently, Nadella was executive vice president of Microsoft’s Cloud and Enterprise group. In this role he led the transformation to the cloud infrastructure and services business, which outperformed the market and took share from competition. Previously, Nadella led R&D for the Online Services Division and was vice president of the Microsoft Business Division. </p>
+
+  </div>
+
+</div>
+<div class="footer">
+  <h4>Contact me:</h4>
+  <p>Phn:+917095605678</p>
+  <a href="https://www.linkedin.com/in/bhavanachukkala/">LinkedIn</a>
+</div>
+  </body>
+</html>
